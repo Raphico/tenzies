@@ -105,6 +105,7 @@ body {
 
 .roll {
   margin-top: 2rem;
+  width: 20%;
 }
 
 @media (min-width: 40em) {
