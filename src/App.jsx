@@ -23,7 +23,7 @@ function App() {
     if (allHeld && allHaveTheSameValue) {
       setTenzies(true)
 
-      if (rollCount < highScore && highScore !== 0) {
+      if (rollCount < highScore || highScore === 0) {
         setHighScore(rollCount)
         localStorage.setItem('Tenzies', rollCount)
         toast.success('New High Score!')
