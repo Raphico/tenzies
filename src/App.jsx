@@ -28,6 +28,9 @@ function App() {
         localStorage.setItem('Tenzies', rollCount)
         toast.success('New High Score!')
       }
+    } else {
+      toast.error('Dice are not the Same! Try again')
+      setDice(allNewDice())
     }
   }, [dice])
 
