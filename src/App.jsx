@@ -29,6 +29,8 @@ function App() {
         toast.success('New High Score!')
       }
     } else if (allHeld && !allHaveTheSameValue) {
+      setTenzies(true)
+
       toast.error('Dice are not the Same! Try again')
       setDice(allNewDice())
     }
