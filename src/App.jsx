@@ -29,7 +29,6 @@ function App() {
         toast.success('New High Score!')
       }
     } else if (allHeld && !allHaveTheSameValue) {
-      setTimeout(() => toast.error('Dice are not the Same! Try again'), 200)
       setDice(allNewDice())
     }
   }, [dice])
